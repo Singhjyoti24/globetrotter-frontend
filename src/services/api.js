@@ -16,7 +16,7 @@ export const checkAnswer = async (destination, answer) => {
     }
 
     try {
-        const { data } = await axios.post(`${API_BASE_URL}/answer`, { destination, answer });
+        const { data } = await axios.post(`${API_BASE_URL}/api/answer`, { destination, answer });
         return data;
     } catch (error) {
         console.error("Error in checkAnswer:", error.response?.data || error.message);
