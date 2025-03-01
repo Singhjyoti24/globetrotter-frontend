@@ -1,0 +1,53 @@
+.invite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffcc00, #6a446a);
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.invite-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    background: white;
+    color: #800080;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.invite-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.loading-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

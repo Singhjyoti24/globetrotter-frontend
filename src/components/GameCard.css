@@ -1,0 +1,62 @@
+/* GameCard.css */
+.game-card {
+    width: 800px;
+    background: #ffffff; /* White background */
+    border: 3px solid #6a0dad; /* Deep purple border */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 4px 4px 15px rgba(106, 13, 173, 0.2);
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    color: #6a0dad; /* Deep Purple */
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.clue {
+    background: #fdfd96; /* Light Yellow */
+    border: 2px solid #ffd700; /* Golden Yellow */
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 10px;
+    justify-content: center;
+}
+
+.option-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: #6a0dad; /* Deep Purple */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition:
+        background 0.3s,
+        transform 0.2s;
+}
+
+.option-button:hover {
+    background: #ffd700; /* Golden Yellow */
+    color: #6a0dad;
+    transform: scale(1.05);
+}
+
+.option-button:active {
+    background: #5a009d; /* Darker Purple */
+}

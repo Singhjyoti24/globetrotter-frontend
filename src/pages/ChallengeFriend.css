@@ -1,0 +1,84 @@
+.challenge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.challenge-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: #7f407f;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.challenge-container input {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ffcc00;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.challenge-container button {
+    background: #ffcc00;
+    color: #6d536d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.challenge-container button:hover {
+    background: #fff;
+    color: #875487;
+    transform: scale(1.05);
+}
+
+.share-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.share-button {
+    background: white;
+    color: #7a517a;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.share-button:hover {
+    background: #ffcc00;
+    color: white;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
